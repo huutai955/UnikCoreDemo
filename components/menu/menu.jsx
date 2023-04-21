@@ -12,15 +12,16 @@ function getItem(label, key, icon, children, type) {
   };
 }
 const items = [
-  getItem(<Link href={"/about"}>aaa</Link>, null, <CalendarFilled />),
+  getItem(<Link href={"/"}>Home</Link>, null, <CalendarFilled />),
   getItem("Calender", "sub2", <CalendarFilled />, [
     getItem("Option 5", "5"),
     getItem("Option 6", "6"),
   ]),
-  getItem("Contacts", "sub3", <UserOutlined />),
-  getItem("Companies", "sub4", <BankOutlined />, [
-    getItem("Option 5", "5"),
-    getItem("Option 6", "6"),
+  getItem(<Link href={"/edit/12"}>Edit Page</Link>, "sub3", <UserOutlined />),
+  getItem(<Link href={"/create"}>Create Page</Link>, "sub4", <UserOutlined />),
+  getItem("Companies", "sub5", <BankOutlined />, [
+    getItem("Option 5", "7"),
+    getItem("Option 6", "8"),
   ]),
 ];
 
