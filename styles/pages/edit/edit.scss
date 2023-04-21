@@ -1,0 +1,79 @@
+.edit {
+  height: 100vh;
+  .edit__scrollbar {
+    .edit__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h2 {
+        padding: 0 30px;
+        font-weight: $font-weight-medium;
+        font-size: 24px;
+      }
+      .edit__buttongroup {
+        margin-right: 40px;
+        .edit__button {
+          font-weight: $font-weight-bold;
+          height: 40px;
+          i {
+            color: red;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .edit__form {
+      label {
+        font-weight: $font-weight-medium;
+      }
+
+      .edit__input {
+        padding: 8px 11px;
+        &::placeholder {
+          font-weight: $font-weight-medium;
+        }
+      }
+
+      .edit__row {
+        height: 100%;
+        width: 100%;
+        border: 1px solid #e0e6ed;
+
+        .edit__colleft {
+          background-color: $color-background-light;
+          .edit__companyscore,
+          .edit__companyowner {
+            margin: 20px 10px;
+            padding-top: 15px;
+            border-top: 1px solid $color-border;
+          }
+        }
+
+        .edit__colright {
+          h2 {
+            margin: 0;
+            padding: 10px 20px;
+            border: 1px solid $color-border;
+            border-bottom: none;
+          }
+
+          .edit__companyinfo,
+          .edit__companyaddress,
+          .edit__companycontact {
+            padding: 10px 20px;
+            border: 1px solid $color-border;
+          }
+
+          .edit__companyaddress {
+            border-top: none;
+          }
+        }
+      }
+    }
+    p {
+      color: $color-footer;
+
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "../styles/variable";
+@import "../styles/components/layouts/main.scss";
+@import "../styles/components/layouts/sidebar/sidebar.scss";
+@import "../styles/components/header/header.scss";
+@import "../styles/components/login/login.scss";
+@import "../styles/pages/edit/edit.scss";
+@import "../styles/pages/home/home.scss";
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
